@@ -1,0 +1,803 @@
+Simulator report for Comp
+Thu Dec 30 18:40:10 2021
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 285 nodes    ;
+; Simulation Coverage         ;      23.08 % ;
+; Total Number of Transitions ; 8489         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484I4 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      23.08 % ;
+; Total nodes checked                                 ; 285          ;
+; Total output ports checked                          ; 364          ;
+; Total output ports with complete 1/0-value coverage ; 84           ;
+; Total output ports with no 1/0-value coverage       ; 277          ;
+; Total output ports with no 1-value coverage         ; 278          ;
+; Total output ports with no 0-value coverage         ; 279          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |Comp|counter:Contador|uni[2]      ; |Comp|counter:Contador|uni[2]      ; regout           ;
+; |Comp|counter:Contador|uni[1]      ; |Comp|counter:Contador|uni[1]      ; regout           ;
+; |Comp|counter:Contador|uni[0]      ; |Comp|counter:Contador|uni[0]      ; regout           ;
+; |Comp|counter:Contador|uni[3]      ; |Comp|counter:Contador|uni[3]      ; regout           ;
+; |Comp|counter:Contador|Add1~1      ; |Comp|counter:Contador|Add1~1      ; sumout           ;
+; |Comp|counter:Contador|Add1~1      ; |Comp|counter:Contador|Add1~2      ; cout             ;
+; |Comp|counter:Contador|Add1~5      ; |Comp|counter:Contador|Add1~5      ; sumout           ;
+; |Comp|counter:Contador|Add1~5      ; |Comp|counter:Contador|Add1~6      ; cout             ;
+; |Comp|counter:Contador|Add1~9      ; |Comp|counter:Contador|Add1~9      ; sumout           ;
+; |Comp|counter:Contador|Add1~9      ; |Comp|counter:Contador|Add1~10     ; cout             ;
+; |Comp|counter:Contador|Add1~13     ; |Comp|counter:Contador|Add1~13     ; sumout           ;
+; |Comp|counter:Contador|Add1~13     ; |Comp|counter:Contador|Add1~14     ; cout             ;
+; |Comp|counter:Contador|Add2~1      ; |Comp|counter:Contador|Add2~1      ; sumout           ;
+; |Comp|counter:Contador|Add2~1      ; |Comp|counter:Contador|Add2~2      ; cout             ;
+; |Comp|counter:Contador|Add2~5      ; |Comp|counter:Contador|Add2~5      ; sumout           ;
+; |Comp|counter:Contador|Add2~5      ; |Comp|counter:Contador|Add2~6      ; cout             ;
+; |Comp|counter:Contador|Add2~9      ; |Comp|counter:Contador|Add2~9      ; sumout           ;
+; |Comp|counter:Contador|Add2~9      ; |Comp|counter:Contador|Add2~10     ; cout             ;
+; |Comp|counter:Contador|cont_clk[3] ; |Comp|counter:Contador|cont_clk[3] ; regout           ;
+; |Comp|counter:Contador|cont_clk[2] ; |Comp|counter:Contador|cont_clk[2] ; regout           ;
+; |Comp|counter:Contador|cont_clk[1] ; |Comp|counter:Contador|cont_clk[1] ; regout           ;
+; |Comp|counter:Contador|cont_clk[0] ; |Comp|counter:Contador|cont_clk[0] ; regout           ;
+; |Comp|counter:Contador|Add0~1      ; |Comp|counter:Contador|Add0~1      ; sumout           ;
+; |Comp|counter:Contador|Add0~1      ; |Comp|counter:Contador|Add0~2      ; cout             ;
+; |Comp|counter:Contador|Add0~5      ; |Comp|counter:Contador|Add0~5      ; sumout           ;
+; |Comp|counter:Contador|Add0~5      ; |Comp|counter:Contador|Add0~6      ; cout             ;
+; |Comp|counter:Contador|Add0~9      ; |Comp|counter:Contador|Add0~9      ; sumout           ;
+; |Comp|counter:Contador|Add0~9      ; |Comp|counter:Contador|Add0~10     ; cout             ;
+; |Comp|counter:Contador|Add0~13     ; |Comp|counter:Contador|Add0~13     ; sumout           ;
+; |Comp|counter:Contador|Add0~13     ; |Comp|counter:Contador|Add0~14     ; cout             ;
+; |Comp|display:D1|comb~0            ; |Comp|display:D1|comb~0            ; combout          ;
+; |Comp|display:D1|comb~1            ; |Comp|display:D1|comb~1            ; combout          ;
+; |Comp|display:D1|comb~2            ; |Comp|display:D1|comb~2            ; combout          ;
+; |Comp|display:D1|comb~3            ; |Comp|display:D1|comb~3            ; combout          ;
+; |Comp|display:D1|comb~4            ; |Comp|display:D1|comb~4            ; combout          ;
+; |Comp|display:D1|comb~5            ; |Comp|display:D1|comb~5            ; combout          ;
+; |Comp|display:D1|comb~6            ; |Comp|display:D1|comb~6            ; combout          ;
+; |Comp|display:D1|comb~7            ; |Comp|display:D1|comb~7            ; combout          ;
+; |Comp|display:D1|Equal7~0          ; |Comp|display:D1|Equal7~0          ; combout          ;
+; |Comp|display:D1|S[6]~0            ; |Comp|display:D1|S[6]~0            ; combout          ;
+; |Comp|display:D1|comb~8            ; |Comp|display:D1|comb~8            ; combout          ;
+; |Comp|display:D1|comb~9            ; |Comp|display:D1|comb~9            ; combout          ;
+; |Comp|display:D1|comb~10           ; |Comp|display:D1|comb~10           ; combout          ;
+; |Comp|display:D1|comb~11           ; |Comp|display:D1|comb~11           ; combout          ;
+; |Comp|counter:Contador|dez[1]      ; |Comp|counter:Contador|dez[1]      ; regout           ;
+; |Comp|counter:Contador|dez[0]      ; |Comp|counter:Contador|dez[0]      ; regout           ;
+; |Comp|display:D2|comb~0            ; |Comp|display:D2|comb~0            ; combout          ;
+; |Comp|display:D2|comb~2            ; |Comp|display:D2|comb~2            ; combout          ;
+; |Comp|display:D2|comb~3            ; |Comp|display:D2|comb~3            ; combout          ;
+; |Comp|display:D2|comb~4            ; |Comp|display:D2|comb~4            ; combout          ;
+; |Comp|display:D2|comb~5            ; |Comp|display:D2|comb~5            ; combout          ;
+; |Comp|display:D2|comb~6            ; |Comp|display:D2|comb~6            ; combout          ;
+; |Comp|display:D2|comb~7            ; |Comp|display:D2|comb~7            ; combout          ;
+; |Comp|display:D2|Equal7~0          ; |Comp|display:D2|Equal7~0          ; combout          ;
+; |Comp|display:D2|S[6]~0            ; |Comp|display:D2|S[6]~0            ; combout          ;
+; |Comp|display:D2|comb~8            ; |Comp|display:D2|comb~8            ; combout          ;
+; |Comp|display:D2|comb~10           ; |Comp|display:D2|comb~10           ; combout          ;
+; |Comp|display:D2|comb~11           ; |Comp|display:D2|comb~11           ; combout          ;
+; |Comp|counter:Contador|Equal0~3    ; |Comp|counter:Contador|Equal0~3    ; combout          ;
+; |Comp|counter:Contador|Equal0~4    ; |Comp|counter:Contador|Equal0~4    ; combout          ;
+; |Comp|counter:Contador|Equal0~5    ; |Comp|counter:Contador|Equal0~5    ; combout          ;
+; |Comp|counter:Contador|Equal0~6    ; |Comp|counter:Contador|Equal0~6    ; combout          ;
+; |Comp|counter:Contador|Equal1~3    ; |Comp|counter:Contador|Equal1~3    ; combout          ;
+; |Comp|counter:Contador|Equal1~4    ; |Comp|counter:Contador|Equal1~4    ; combout          ;
+; |Comp|counter:Contador|Equal1~5    ; |Comp|counter:Contador|Equal1~5    ; combout          ;
+; |Comp|counter:Contador|uni[13]~0   ; |Comp|counter:Contador|uni[13]~0   ; combout          ;
+; |Comp|counter:Contador|LessThan0~0 ; |Comp|counter:Contador|LessThan0~0 ; combout          ;
+; |Comp|counter:Contador|LessThan0~6 ; |Comp|counter:Contador|LessThan0~6 ; combout          ;
+; |Comp|P1[0]                        ; |Comp|P1[0]                        ; padio            ;
+; |Comp|P1[1]                        ; |Comp|P1[1]                        ; padio            ;
+; |Comp|P1[2]                        ; |Comp|P1[2]                        ; padio            ;
+; |Comp|P1[3]                        ; |Comp|P1[3]                        ; padio            ;
+; |Comp|P1[4]                        ; |Comp|P1[4]                        ; padio            ;
+; |Comp|P1[5]                        ; |Comp|P1[5]                        ; padio            ;
+; |Comp|P1[6]                        ; |Comp|P1[6]                        ; padio            ;
+; |Comp|P2[0]                        ; |Comp|P2[0]                        ; padio            ;
+; |Comp|P2[1]                        ; |Comp|P2[1]                        ; padio            ;
+; |Comp|P2[2]                        ; |Comp|P2[2]                        ; padio            ;
+; |Comp|P2[3]                        ; |Comp|P2[3]                        ; padio            ;
+; |Comp|P2[4]                        ; |Comp|P2[4]                        ; padio            ;
+; |Comp|P2[5]                        ; |Comp|P2[5]                        ; padio            ;
+; |Comp|P2[6]                        ; |Comp|P2[6]                        ; padio            ;
+; |Comp|clk                          ; |Comp|clk~corein                   ; combout          ;
+; |Comp|clk~clkctrl                  ; |Comp|clk~clkctrl                  ; outclk           ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                     ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |Comp|counter:Contador|uni[15]      ; |Comp|counter:Contador|uni[15]      ; regout           ;
+; |Comp|counter:Contador|uni[16]      ; |Comp|counter:Contador|uni[16]      ; regout           ;
+; |Comp|counter:Contador|uni[18]      ; |Comp|counter:Contador|uni[18]      ; regout           ;
+; |Comp|counter:Contador|uni[17]      ; |Comp|counter:Contador|uni[17]      ; regout           ;
+; |Comp|counter:Contador|uni[19]      ; |Comp|counter:Contador|uni[19]      ; regout           ;
+; |Comp|counter:Contador|uni[20]      ; |Comp|counter:Contador|uni[20]      ; regout           ;
+; |Comp|counter:Contador|uni[21]      ; |Comp|counter:Contador|uni[21]      ; regout           ;
+; |Comp|counter:Contador|uni[22]      ; |Comp|counter:Contador|uni[22]      ; regout           ;
+; |Comp|counter:Contador|uni[24]      ; |Comp|counter:Contador|uni[24]      ; regout           ;
+; |Comp|counter:Contador|uni[23]      ; |Comp|counter:Contador|uni[23]      ; regout           ;
+; |Comp|counter:Contador|uni[26]      ; |Comp|counter:Contador|uni[26]      ; regout           ;
+; |Comp|counter:Contador|uni[27]      ; |Comp|counter:Contador|uni[27]      ; regout           ;
+; |Comp|counter:Contador|uni[28]      ; |Comp|counter:Contador|uni[28]      ; regout           ;
+; |Comp|counter:Contador|uni[29]      ; |Comp|counter:Contador|uni[29]      ; regout           ;
+; |Comp|counter:Contador|uni[31]      ; |Comp|counter:Contador|uni[31]      ; regout           ;
+; |Comp|counter:Contador|uni[30]      ; |Comp|counter:Contador|uni[30]      ; regout           ;
+; |Comp|counter:Contador|uni[8]       ; |Comp|counter:Contador|uni[8]       ; regout           ;
+; |Comp|counter:Contador|uni[9]       ; |Comp|counter:Contador|uni[9]       ; regout           ;
+; |Comp|counter:Contador|uni[10]      ; |Comp|counter:Contador|uni[10]      ; regout           ;
+; |Comp|counter:Contador|uni[11]      ; |Comp|counter:Contador|uni[11]      ; regout           ;
+; |Comp|counter:Contador|uni[13]      ; |Comp|counter:Contador|uni[13]      ; regout           ;
+; |Comp|counter:Contador|uni[12]      ; |Comp|counter:Contador|uni[12]      ; regout           ;
+; |Comp|counter:Contador|uni[25]      ; |Comp|counter:Contador|uni[25]      ; regout           ;
+; |Comp|counter:Contador|uni[4]       ; |Comp|counter:Contador|uni[4]       ; regout           ;
+; |Comp|counter:Contador|uni[14]      ; |Comp|counter:Contador|uni[14]      ; regout           ;
+; |Comp|counter:Contador|uni[5]       ; |Comp|counter:Contador|uni[5]       ; regout           ;
+; |Comp|counter:Contador|uni[7]       ; |Comp|counter:Contador|uni[7]       ; regout           ;
+; |Comp|counter:Contador|uni[6]       ; |Comp|counter:Contador|uni[6]       ; regout           ;
+; |Comp|counter:Contador|Add1~17      ; |Comp|counter:Contador|Add1~17      ; sumout           ;
+; |Comp|counter:Contador|Add1~17      ; |Comp|counter:Contador|Add1~18      ; cout             ;
+; |Comp|counter:Contador|Add1~21      ; |Comp|counter:Contador|Add1~21      ; sumout           ;
+; |Comp|counter:Contador|Add1~21      ; |Comp|counter:Contador|Add1~22      ; cout             ;
+; |Comp|counter:Contador|Add1~25      ; |Comp|counter:Contador|Add1~25      ; sumout           ;
+; |Comp|counter:Contador|Add1~25      ; |Comp|counter:Contador|Add1~26      ; cout             ;
+; |Comp|counter:Contador|Add1~29      ; |Comp|counter:Contador|Add1~29      ; sumout           ;
+; |Comp|counter:Contador|Add1~29      ; |Comp|counter:Contador|Add1~30      ; cout             ;
+; |Comp|counter:Contador|Add1~33      ; |Comp|counter:Contador|Add1~33      ; sumout           ;
+; |Comp|counter:Contador|Add1~33      ; |Comp|counter:Contador|Add1~34      ; cout             ;
+; |Comp|counter:Contador|Add1~37      ; |Comp|counter:Contador|Add1~37      ; sumout           ;
+; |Comp|counter:Contador|Add1~37      ; |Comp|counter:Contador|Add1~38      ; cout             ;
+; |Comp|counter:Contador|Add1~41      ; |Comp|counter:Contador|Add1~41      ; sumout           ;
+; |Comp|counter:Contador|Add1~41      ; |Comp|counter:Contador|Add1~42      ; cout             ;
+; |Comp|counter:Contador|Add1~45      ; |Comp|counter:Contador|Add1~45      ; sumout           ;
+; |Comp|counter:Contador|Add1~45      ; |Comp|counter:Contador|Add1~46      ; cout             ;
+; |Comp|counter:Contador|Add1~49      ; |Comp|counter:Contador|Add1~49      ; sumout           ;
+; |Comp|counter:Contador|Add1~49      ; |Comp|counter:Contador|Add1~50      ; cout             ;
+; |Comp|counter:Contador|Add1~53      ; |Comp|counter:Contador|Add1~53      ; sumout           ;
+; |Comp|counter:Contador|Add1~53      ; |Comp|counter:Contador|Add1~54      ; cout             ;
+; |Comp|counter:Contador|Add1~57      ; |Comp|counter:Contador|Add1~57      ; sumout           ;
+; |Comp|counter:Contador|Add1~57      ; |Comp|counter:Contador|Add1~58      ; cout             ;
+; |Comp|counter:Contador|Add1~61      ; |Comp|counter:Contador|Add1~61      ; sumout           ;
+; |Comp|counter:Contador|Add1~61      ; |Comp|counter:Contador|Add1~62      ; cout             ;
+; |Comp|counter:Contador|Add1~65      ; |Comp|counter:Contador|Add1~65      ; sumout           ;
+; |Comp|counter:Contador|Add1~65      ; |Comp|counter:Contador|Add1~66      ; cout             ;
+; |Comp|counter:Contador|Add1~69      ; |Comp|counter:Contador|Add1~69      ; sumout           ;
+; |Comp|counter:Contador|Add1~69      ; |Comp|counter:Contador|Add1~70      ; cout             ;
+; |Comp|counter:Contador|Add1~73      ; |Comp|counter:Contador|Add1~73      ; sumout           ;
+; |Comp|counter:Contador|Add1~73      ; |Comp|counter:Contador|Add1~74      ; cout             ;
+; |Comp|counter:Contador|Add1~77      ; |Comp|counter:Contador|Add1~77      ; sumout           ;
+; |Comp|counter:Contador|Add1~77      ; |Comp|counter:Contador|Add1~78      ; cout             ;
+; |Comp|counter:Contador|Add1~81      ; |Comp|counter:Contador|Add1~81      ; sumout           ;
+; |Comp|counter:Contador|Add1~81      ; |Comp|counter:Contador|Add1~82      ; cout             ;
+; |Comp|counter:Contador|Add1~85      ; |Comp|counter:Contador|Add1~85      ; sumout           ;
+; |Comp|counter:Contador|Add1~85      ; |Comp|counter:Contador|Add1~86      ; cout             ;
+; |Comp|counter:Contador|Add1~89      ; |Comp|counter:Contador|Add1~89      ; sumout           ;
+; |Comp|counter:Contador|Add1~89      ; |Comp|counter:Contador|Add1~90      ; cout             ;
+; |Comp|counter:Contador|Add1~93      ; |Comp|counter:Contador|Add1~93      ; sumout           ;
+; |Comp|counter:Contador|Add1~93      ; |Comp|counter:Contador|Add1~94      ; cout             ;
+; |Comp|counter:Contador|Add1~97      ; |Comp|counter:Contador|Add1~97      ; sumout           ;
+; |Comp|counter:Contador|Add1~97      ; |Comp|counter:Contador|Add1~98      ; cout             ;
+; |Comp|counter:Contador|Add1~101     ; |Comp|counter:Contador|Add1~101     ; sumout           ;
+; |Comp|counter:Contador|Add1~101     ; |Comp|counter:Contador|Add1~102     ; cout             ;
+; |Comp|counter:Contador|Add1~105     ; |Comp|counter:Contador|Add1~105     ; sumout           ;
+; |Comp|counter:Contador|Add1~105     ; |Comp|counter:Contador|Add1~106     ; cout             ;
+; |Comp|counter:Contador|Add1~109     ; |Comp|counter:Contador|Add1~109     ; sumout           ;
+; |Comp|counter:Contador|Add1~109     ; |Comp|counter:Contador|Add1~110     ; cout             ;
+; |Comp|counter:Contador|Add1~113     ; |Comp|counter:Contador|Add1~113     ; sumout           ;
+; |Comp|counter:Contador|Add1~113     ; |Comp|counter:Contador|Add1~114     ; cout             ;
+; |Comp|counter:Contador|Add1~117     ; |Comp|counter:Contador|Add1~117     ; sumout           ;
+; |Comp|counter:Contador|Add1~117     ; |Comp|counter:Contador|Add1~118     ; cout             ;
+; |Comp|counter:Contador|Add1~121     ; |Comp|counter:Contador|Add1~121     ; sumout           ;
+; |Comp|counter:Contador|Add1~121     ; |Comp|counter:Contador|Add1~122     ; cout             ;
+; |Comp|counter:Contador|Add1~125     ; |Comp|counter:Contador|Add1~125     ; sumout           ;
+; |Comp|counter:Contador|Add2~13      ; |Comp|counter:Contador|Add2~13      ; sumout           ;
+; |Comp|counter:Contador|Add2~13      ; |Comp|counter:Contador|Add2~14      ; cout             ;
+; |Comp|counter:Contador|Add2~17      ; |Comp|counter:Contador|Add2~17      ; sumout           ;
+; |Comp|counter:Contador|Add2~17      ; |Comp|counter:Contador|Add2~18      ; cout             ;
+; |Comp|counter:Contador|Add2~21      ; |Comp|counter:Contador|Add2~21      ; sumout           ;
+; |Comp|counter:Contador|Add2~21      ; |Comp|counter:Contador|Add2~22      ; cout             ;
+; |Comp|counter:Contador|Add2~25      ; |Comp|counter:Contador|Add2~25      ; sumout           ;
+; |Comp|counter:Contador|Add2~25      ; |Comp|counter:Contador|Add2~26      ; cout             ;
+; |Comp|counter:Contador|Add2~29      ; |Comp|counter:Contador|Add2~29      ; sumout           ;
+; |Comp|counter:Contador|Add2~29      ; |Comp|counter:Contador|Add2~30      ; cout             ;
+; |Comp|counter:Contador|Add2~33      ; |Comp|counter:Contador|Add2~33      ; sumout           ;
+; |Comp|counter:Contador|Add2~33      ; |Comp|counter:Contador|Add2~34      ; cout             ;
+; |Comp|counter:Contador|Add2~37      ; |Comp|counter:Contador|Add2~37      ; sumout           ;
+; |Comp|counter:Contador|Add2~37      ; |Comp|counter:Contador|Add2~38      ; cout             ;
+; |Comp|counter:Contador|Add2~41      ; |Comp|counter:Contador|Add2~41      ; sumout           ;
+; |Comp|counter:Contador|Add2~41      ; |Comp|counter:Contador|Add2~42      ; cout             ;
+; |Comp|counter:Contador|Add2~45      ; |Comp|counter:Contador|Add2~45      ; sumout           ;
+; |Comp|counter:Contador|Add2~45      ; |Comp|counter:Contador|Add2~46      ; cout             ;
+; |Comp|counter:Contador|Add2~49      ; |Comp|counter:Contador|Add2~49      ; sumout           ;
+; |Comp|counter:Contador|Add2~49      ; |Comp|counter:Contador|Add2~50      ; cout             ;
+; |Comp|counter:Contador|Add2~53      ; |Comp|counter:Contador|Add2~53      ; sumout           ;
+; |Comp|counter:Contador|Add2~53      ; |Comp|counter:Contador|Add2~54      ; cout             ;
+; |Comp|counter:Contador|Add2~57      ; |Comp|counter:Contador|Add2~57      ; sumout           ;
+; |Comp|counter:Contador|Add2~57      ; |Comp|counter:Contador|Add2~58      ; cout             ;
+; |Comp|counter:Contador|Add2~61      ; |Comp|counter:Contador|Add2~61      ; sumout           ;
+; |Comp|counter:Contador|Add2~61      ; |Comp|counter:Contador|Add2~62      ; cout             ;
+; |Comp|counter:Contador|Add2~65      ; |Comp|counter:Contador|Add2~65      ; sumout           ;
+; |Comp|counter:Contador|Add2~65      ; |Comp|counter:Contador|Add2~66      ; cout             ;
+; |Comp|counter:Contador|Add2~69      ; |Comp|counter:Contador|Add2~69      ; sumout           ;
+; |Comp|counter:Contador|Add2~69      ; |Comp|counter:Contador|Add2~70      ; cout             ;
+; |Comp|counter:Contador|Add2~73      ; |Comp|counter:Contador|Add2~73      ; sumout           ;
+; |Comp|counter:Contador|Add2~73      ; |Comp|counter:Contador|Add2~74      ; cout             ;
+; |Comp|counter:Contador|Add2~77      ; |Comp|counter:Contador|Add2~77      ; sumout           ;
+; |Comp|counter:Contador|Add2~77      ; |Comp|counter:Contador|Add2~78      ; cout             ;
+; |Comp|counter:Contador|Add2~81      ; |Comp|counter:Contador|Add2~81      ; sumout           ;
+; |Comp|counter:Contador|Add2~81      ; |Comp|counter:Contador|Add2~82      ; cout             ;
+; |Comp|counter:Contador|Add2~85      ; |Comp|counter:Contador|Add2~85      ; sumout           ;
+; |Comp|counter:Contador|Add2~85      ; |Comp|counter:Contador|Add2~86      ; cout             ;
+; |Comp|counter:Contador|Add2~89      ; |Comp|counter:Contador|Add2~89      ; sumout           ;
+; |Comp|counter:Contador|Add2~89      ; |Comp|counter:Contador|Add2~90      ; cout             ;
+; |Comp|counter:Contador|Add2~93      ; |Comp|counter:Contador|Add2~93      ; sumout           ;
+; |Comp|counter:Contador|Add2~93      ; |Comp|counter:Contador|Add2~94      ; cout             ;
+; |Comp|counter:Contador|Add2~97      ; |Comp|counter:Contador|Add2~97      ; sumout           ;
+; |Comp|counter:Contador|Add2~97      ; |Comp|counter:Contador|Add2~98      ; cout             ;
+; |Comp|counter:Contador|Add2~101     ; |Comp|counter:Contador|Add2~101     ; sumout           ;
+; |Comp|counter:Contador|Add2~101     ; |Comp|counter:Contador|Add2~102     ; cout             ;
+; |Comp|counter:Contador|Add2~105     ; |Comp|counter:Contador|Add2~105     ; sumout           ;
+; |Comp|counter:Contador|Add2~105     ; |Comp|counter:Contador|Add2~106     ; cout             ;
+; |Comp|counter:Contador|Add2~109     ; |Comp|counter:Contador|Add2~109     ; sumout           ;
+; |Comp|counter:Contador|Add2~109     ; |Comp|counter:Contador|Add2~110     ; cout             ;
+; |Comp|counter:Contador|Add2~113     ; |Comp|counter:Contador|Add2~113     ; sumout           ;
+; |Comp|counter:Contador|Add2~113     ; |Comp|counter:Contador|Add2~114     ; cout             ;
+; |Comp|counter:Contador|Add2~117     ; |Comp|counter:Contador|Add2~117     ; sumout           ;
+; |Comp|counter:Contador|Add2~117     ; |Comp|counter:Contador|Add2~118     ; cout             ;
+; |Comp|counter:Contador|Add2~121     ; |Comp|counter:Contador|Add2~121     ; sumout           ;
+; |Comp|counter:Contador|Add2~121     ; |Comp|counter:Contador|Add2~122     ; cout             ;
+; |Comp|counter:Contador|Add2~125     ; |Comp|counter:Contador|Add2~125     ; sumout           ;
+; |Comp|counter:Contador|cont_clk[31] ; |Comp|counter:Contador|cont_clk[31] ; regout           ;
+; |Comp|counter:Contador|cont_clk[4]  ; |Comp|counter:Contador|cont_clk[4]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[7]  ; |Comp|counter:Contador|cont_clk[7]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[5]  ; |Comp|counter:Contador|cont_clk[5]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[8]  ; |Comp|counter:Contador|cont_clk[8]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[9]  ; |Comp|counter:Contador|cont_clk[9]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[10] ; |Comp|counter:Contador|cont_clk[10] ; regout           ;
+; |Comp|counter:Contador|cont_clk[11] ; |Comp|counter:Contador|cont_clk[11] ; regout           ;
+; |Comp|counter:Contador|cont_clk[13] ; |Comp|counter:Contador|cont_clk[13] ; regout           ;
+; |Comp|counter:Contador|cont_clk[12] ; |Comp|counter:Contador|cont_clk[12] ; regout           ;
+; |Comp|counter:Contador|cont_clk[14] ; |Comp|counter:Contador|cont_clk[14] ; regout           ;
+; |Comp|counter:Contador|cont_clk[15] ; |Comp|counter:Contador|cont_clk[15] ; regout           ;
+; |Comp|counter:Contador|cont_clk[16] ; |Comp|counter:Contador|cont_clk[16] ; regout           ;
+; |Comp|counter:Contador|cont_clk[17] ; |Comp|counter:Contador|cont_clk[17] ; regout           ;
+; |Comp|counter:Contador|cont_clk[29] ; |Comp|counter:Contador|cont_clk[29] ; regout           ;
+; |Comp|counter:Contador|cont_clk[30] ; |Comp|counter:Contador|cont_clk[30] ; regout           ;
+; |Comp|counter:Contador|cont_clk[22] ; |Comp|counter:Contador|cont_clk[22] ; regout           ;
+; |Comp|counter:Contador|cont_clk[21] ; |Comp|counter:Contador|cont_clk[21] ; regout           ;
+; |Comp|counter:Contador|cont_clk[20] ; |Comp|counter:Contador|cont_clk[20] ; regout           ;
+; |Comp|counter:Contador|cont_clk[19] ; |Comp|counter:Contador|cont_clk[19] ; regout           ;
+; |Comp|counter:Contador|cont_clk[26] ; |Comp|counter:Contador|cont_clk[26] ; regout           ;
+; |Comp|counter:Contador|cont_clk[18] ; |Comp|counter:Contador|cont_clk[18] ; regout           ;
+; |Comp|counter:Contador|cont_clk[28] ; |Comp|counter:Contador|cont_clk[28] ; regout           ;
+; |Comp|counter:Contador|cont_clk[6]  ; |Comp|counter:Contador|cont_clk[6]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[27] ; |Comp|counter:Contador|cont_clk[27] ; regout           ;
+; |Comp|counter:Contador|cont_clk[25] ; |Comp|counter:Contador|cont_clk[25] ; regout           ;
+; |Comp|counter:Contador|cont_clk[23] ; |Comp|counter:Contador|cont_clk[23] ; regout           ;
+; |Comp|counter:Contador|cont_clk[24] ; |Comp|counter:Contador|cont_clk[24] ; regout           ;
+; |Comp|counter:Contador|Add0~17      ; |Comp|counter:Contador|Add0~17      ; sumout           ;
+; |Comp|counter:Contador|Add0~17      ; |Comp|counter:Contador|Add0~18      ; cout             ;
+; |Comp|counter:Contador|Add0~21      ; |Comp|counter:Contador|Add0~21      ; sumout           ;
+; |Comp|counter:Contador|Add0~21      ; |Comp|counter:Contador|Add0~22      ; cout             ;
+; |Comp|counter:Contador|Add0~25      ; |Comp|counter:Contador|Add0~25      ; sumout           ;
+; |Comp|counter:Contador|Add0~25      ; |Comp|counter:Contador|Add0~26      ; cout             ;
+; |Comp|counter:Contador|Add0~29      ; |Comp|counter:Contador|Add0~29      ; sumout           ;
+; |Comp|counter:Contador|Add0~29      ; |Comp|counter:Contador|Add0~30      ; cout             ;
+; |Comp|counter:Contador|Add0~33      ; |Comp|counter:Contador|Add0~33      ; sumout           ;
+; |Comp|counter:Contador|Add0~33      ; |Comp|counter:Contador|Add0~34      ; cout             ;
+; |Comp|counter:Contador|Add0~37      ; |Comp|counter:Contador|Add0~37      ; sumout           ;
+; |Comp|counter:Contador|Add0~37      ; |Comp|counter:Contador|Add0~38      ; cout             ;
+; |Comp|counter:Contador|Add0~41      ; |Comp|counter:Contador|Add0~41      ; sumout           ;
+; |Comp|counter:Contador|Add0~41      ; |Comp|counter:Contador|Add0~42      ; cout             ;
+; |Comp|counter:Contador|Add0~45      ; |Comp|counter:Contador|Add0~45      ; sumout           ;
+; |Comp|counter:Contador|Add0~45      ; |Comp|counter:Contador|Add0~46      ; cout             ;
+; |Comp|counter:Contador|Add0~49      ; |Comp|counter:Contador|Add0~49      ; sumout           ;
+; |Comp|counter:Contador|Add0~49      ; |Comp|counter:Contador|Add0~50      ; cout             ;
+; |Comp|counter:Contador|Add0~53      ; |Comp|counter:Contador|Add0~53      ; sumout           ;
+; |Comp|counter:Contador|Add0~53      ; |Comp|counter:Contador|Add0~54      ; cout             ;
+; |Comp|counter:Contador|Add0~57      ; |Comp|counter:Contador|Add0~57      ; sumout           ;
+; |Comp|counter:Contador|Add0~57      ; |Comp|counter:Contador|Add0~58      ; cout             ;
+; |Comp|counter:Contador|Add0~61      ; |Comp|counter:Contador|Add0~61      ; sumout           ;
+; |Comp|counter:Contador|Add0~61      ; |Comp|counter:Contador|Add0~62      ; cout             ;
+; |Comp|counter:Contador|Add0~65      ; |Comp|counter:Contador|Add0~65      ; sumout           ;
+; |Comp|counter:Contador|Add0~65      ; |Comp|counter:Contador|Add0~66      ; cout             ;
+; |Comp|counter:Contador|Add0~69      ; |Comp|counter:Contador|Add0~69      ; sumout           ;
+; |Comp|counter:Contador|Add0~69      ; |Comp|counter:Contador|Add0~70      ; cout             ;
+; |Comp|counter:Contador|Add0~73      ; |Comp|counter:Contador|Add0~73      ; sumout           ;
+; |Comp|counter:Contador|Add0~73      ; |Comp|counter:Contador|Add0~74      ; cout             ;
+; |Comp|counter:Contador|Add0~77      ; |Comp|counter:Contador|Add0~77      ; sumout           ;
+; |Comp|counter:Contador|Add0~77      ; |Comp|counter:Contador|Add0~78      ; cout             ;
+; |Comp|counter:Contador|Add0~81      ; |Comp|counter:Contador|Add0~81      ; sumout           ;
+; |Comp|counter:Contador|Add0~81      ; |Comp|counter:Contador|Add0~82      ; cout             ;
+; |Comp|counter:Contador|Add0~85      ; |Comp|counter:Contador|Add0~85      ; sumout           ;
+; |Comp|counter:Contador|Add0~85      ; |Comp|counter:Contador|Add0~86      ; cout             ;
+; |Comp|counter:Contador|Add0~89      ; |Comp|counter:Contador|Add0~89      ; sumout           ;
+; |Comp|counter:Contador|Add0~89      ; |Comp|counter:Contador|Add0~90      ; cout             ;
+; |Comp|counter:Contador|Add0~93      ; |Comp|counter:Contador|Add0~93      ; sumout           ;
+; |Comp|counter:Contador|Add0~93      ; |Comp|counter:Contador|Add0~94      ; cout             ;
+; |Comp|counter:Contador|Add0~97      ; |Comp|counter:Contador|Add0~97      ; sumout           ;
+; |Comp|counter:Contador|Add0~97      ; |Comp|counter:Contador|Add0~98      ; cout             ;
+; |Comp|counter:Contador|Add0~101     ; |Comp|counter:Contador|Add0~101     ; sumout           ;
+; |Comp|counter:Contador|Add0~101     ; |Comp|counter:Contador|Add0~102     ; cout             ;
+; |Comp|counter:Contador|Add0~105     ; |Comp|counter:Contador|Add0~105     ; sumout           ;
+; |Comp|counter:Contador|Add0~105     ; |Comp|counter:Contador|Add0~106     ; cout             ;
+; |Comp|counter:Contador|Add0~109     ; |Comp|counter:Contador|Add0~109     ; sumout           ;
+; |Comp|counter:Contador|Add0~109     ; |Comp|counter:Contador|Add0~110     ; cout             ;
+; |Comp|counter:Contador|Add0~113     ; |Comp|counter:Contador|Add0~113     ; sumout           ;
+; |Comp|counter:Contador|Add0~113     ; |Comp|counter:Contador|Add0~114     ; cout             ;
+; |Comp|counter:Contador|Add0~117     ; |Comp|counter:Contador|Add0~117     ; sumout           ;
+; |Comp|counter:Contador|Add0~117     ; |Comp|counter:Contador|Add0~118     ; cout             ;
+; |Comp|counter:Contador|Add0~121     ; |Comp|counter:Contador|Add0~121     ; sumout           ;
+; |Comp|counter:Contador|Add0~121     ; |Comp|counter:Contador|Add0~122     ; cout             ;
+; |Comp|counter:Contador|Add0~125     ; |Comp|counter:Contador|Add0~125     ; sumout           ;
+; |Comp|display:D1|Equal0~0           ; |Comp|display:D1|Equal0~0           ; combout          ;
+; |Comp|display:D1|Equal0~1           ; |Comp|display:D1|Equal0~1           ; combout          ;
+; |Comp|display:D1|Equal0~2           ; |Comp|display:D1|Equal0~2           ; combout          ;
+; |Comp|display:D1|Equal0~3           ; |Comp|display:D1|Equal0~3           ; combout          ;
+; |Comp|display:D1|Equal0~4           ; |Comp|display:D1|Equal0~4           ; combout          ;
+; |Comp|display:D1|Equal0~5           ; |Comp|display:D1|Equal0~5           ; combout          ;
+; |Comp|counter:Contador|dez[3]       ; |Comp|counter:Contador|dez[3]       ; regout           ;
+; |Comp|counter:Contador|dez[4]       ; |Comp|counter:Contador|dez[4]       ; regout           ;
+; |Comp|counter:Contador|dez[5]       ; |Comp|counter:Contador|dez[5]       ; regout           ;
+; |Comp|counter:Contador|dez[7]       ; |Comp|counter:Contador|dez[7]       ; regout           ;
+; |Comp|counter:Contador|dez[6]       ; |Comp|counter:Contador|dez[6]       ; regout           ;
+; |Comp|display:D2|Equal0~0           ; |Comp|display:D2|Equal0~0           ; combout          ;
+; |Comp|counter:Contador|dez[8]       ; |Comp|counter:Contador|dez[8]       ; regout           ;
+; |Comp|counter:Contador|dez[9]       ; |Comp|counter:Contador|dez[9]       ; regout           ;
+; |Comp|counter:Contador|dez[10]      ; |Comp|counter:Contador|dez[10]      ; regout           ;
+; |Comp|counter:Contador|dez[11]      ; |Comp|counter:Contador|dez[11]      ; regout           ;
+; |Comp|counter:Contador|dez[13]      ; |Comp|counter:Contador|dez[13]      ; regout           ;
+; |Comp|counter:Contador|dez[12]      ; |Comp|counter:Contador|dez[12]      ; regout           ;
+; |Comp|display:D2|Equal0~1           ; |Comp|display:D2|Equal0~1           ; combout          ;
+; |Comp|counter:Contador|dez[14]      ; |Comp|counter:Contador|dez[14]      ; regout           ;
+; |Comp|counter:Contador|dez[15]      ; |Comp|counter:Contador|dez[15]      ; regout           ;
+; |Comp|counter:Contador|dez[16]      ; |Comp|counter:Contador|dez[16]      ; regout           ;
+; |Comp|counter:Contador|dez[17]      ; |Comp|counter:Contador|dez[17]      ; regout           ;
+; |Comp|counter:Contador|dez[19]      ; |Comp|counter:Contador|dez[19]      ; regout           ;
+; |Comp|counter:Contador|dez[18]      ; |Comp|counter:Contador|dez[18]      ; regout           ;
+; |Comp|display:D2|Equal0~2           ; |Comp|display:D2|Equal0~2           ; combout          ;
+; |Comp|counter:Contador|dez[26]      ; |Comp|counter:Contador|dez[26]      ; regout           ;
+; |Comp|counter:Contador|dez[27]      ; |Comp|counter:Contador|dez[27]      ; regout           ;
+; |Comp|counter:Contador|dez[28]      ; |Comp|counter:Contador|dez[28]      ; regout           ;
+; |Comp|counter:Contador|dez[29]      ; |Comp|counter:Contador|dez[29]      ; regout           ;
+; |Comp|counter:Contador|dez[31]      ; |Comp|counter:Contador|dez[31]      ; regout           ;
+; |Comp|counter:Contador|dez[30]      ; |Comp|counter:Contador|dez[30]      ; regout           ;
+; |Comp|display:D2|Equal0~3           ; |Comp|display:D2|Equal0~3           ; combout          ;
+; |Comp|counter:Contador|dez[20]      ; |Comp|counter:Contador|dez[20]      ; regout           ;
+; |Comp|counter:Contador|dez[21]      ; |Comp|counter:Contador|dez[21]      ; regout           ;
+; |Comp|counter:Contador|dez[22]      ; |Comp|counter:Contador|dez[22]      ; regout           ;
+; |Comp|counter:Contador|dez[23]      ; |Comp|counter:Contador|dez[23]      ; regout           ;
+; |Comp|counter:Contador|dez[25]      ; |Comp|counter:Contador|dez[25]      ; regout           ;
+; |Comp|counter:Contador|dez[24]      ; |Comp|counter:Contador|dez[24]      ; regout           ;
+; |Comp|display:D2|Equal0~4           ; |Comp|display:D2|Equal0~4           ; combout          ;
+; |Comp|display:D2|Equal0~5           ; |Comp|display:D2|Equal0~5           ; combout          ;
+; |Comp|display:D2|comb~9             ; |Comp|display:D2|comb~9             ; combout          ;
+; |Comp|counter:Contador|Equal0~0     ; |Comp|counter:Contador|Equal0~0     ; combout          ;
+; |Comp|counter:Contador|Equal0~1     ; |Comp|counter:Contador|Equal0~1     ; combout          ;
+; |Comp|counter:Contador|Equal0~2     ; |Comp|counter:Contador|Equal0~2     ; combout          ;
+; |Comp|counter:Contador|Equal1~0     ; |Comp|counter:Contador|Equal1~0     ; combout          ;
+; |Comp|counter:Contador|Equal1~1     ; |Comp|counter:Contador|Equal1~1     ; combout          ;
+; |Comp|counter:Contador|Equal1~2     ; |Comp|counter:Contador|Equal1~2     ; combout          ;
+; |Comp|counter:Contador|LessThan0~1  ; |Comp|counter:Contador|LessThan0~1  ; combout          ;
+; |Comp|counter:Contador|LessThan0~2  ; |Comp|counter:Contador|LessThan0~2  ; combout          ;
+; |Comp|counter:Contador|LessThan0~3  ; |Comp|counter:Contador|LessThan0~3  ; combout          ;
+; |Comp|counter:Contador|LessThan0~4  ; |Comp|counter:Contador|LessThan0~4  ; combout          ;
+; |Comp|counter:Contador|LessThan0~5  ; |Comp|counter:Contador|LessThan0~5  ; combout          ;
+; |Comp|rst                           ; |Comp|rst~corein                    ; combout          ;
+; |Comp|rst~clkctrl                   ; |Comp|rst~clkctrl                   ; outclk           ;
++-------------------------------------+-------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                     ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |Comp|counter:Contador|uni[15]      ; |Comp|counter:Contador|uni[15]      ; regout           ;
+; |Comp|counter:Contador|uni[16]      ; |Comp|counter:Contador|uni[16]      ; regout           ;
+; |Comp|counter:Contador|uni[18]      ; |Comp|counter:Contador|uni[18]      ; regout           ;
+; |Comp|counter:Contador|uni[17]      ; |Comp|counter:Contador|uni[17]      ; regout           ;
+; |Comp|counter:Contador|uni[19]      ; |Comp|counter:Contador|uni[19]      ; regout           ;
+; |Comp|counter:Contador|uni[20]      ; |Comp|counter:Contador|uni[20]      ; regout           ;
+; |Comp|counter:Contador|uni[21]      ; |Comp|counter:Contador|uni[21]      ; regout           ;
+; |Comp|counter:Contador|uni[22]      ; |Comp|counter:Contador|uni[22]      ; regout           ;
+; |Comp|counter:Contador|uni[24]      ; |Comp|counter:Contador|uni[24]      ; regout           ;
+; |Comp|counter:Contador|uni[23]      ; |Comp|counter:Contador|uni[23]      ; regout           ;
+; |Comp|counter:Contador|uni[26]      ; |Comp|counter:Contador|uni[26]      ; regout           ;
+; |Comp|counter:Contador|uni[27]      ; |Comp|counter:Contador|uni[27]      ; regout           ;
+; |Comp|counter:Contador|uni[28]      ; |Comp|counter:Contador|uni[28]      ; regout           ;
+; |Comp|counter:Contador|uni[29]      ; |Comp|counter:Contador|uni[29]      ; regout           ;
+; |Comp|counter:Contador|uni[31]      ; |Comp|counter:Contador|uni[31]      ; regout           ;
+; |Comp|counter:Contador|uni[30]      ; |Comp|counter:Contador|uni[30]      ; regout           ;
+; |Comp|counter:Contador|uni[8]       ; |Comp|counter:Contador|uni[8]       ; regout           ;
+; |Comp|counter:Contador|uni[9]       ; |Comp|counter:Contador|uni[9]       ; regout           ;
+; |Comp|counter:Contador|uni[10]      ; |Comp|counter:Contador|uni[10]      ; regout           ;
+; |Comp|counter:Contador|uni[11]      ; |Comp|counter:Contador|uni[11]      ; regout           ;
+; |Comp|counter:Contador|uni[13]      ; |Comp|counter:Contador|uni[13]      ; regout           ;
+; |Comp|counter:Contador|uni[12]      ; |Comp|counter:Contador|uni[12]      ; regout           ;
+; |Comp|counter:Contador|uni[25]      ; |Comp|counter:Contador|uni[25]      ; regout           ;
+; |Comp|counter:Contador|uni[4]       ; |Comp|counter:Contador|uni[4]       ; regout           ;
+; |Comp|counter:Contador|uni[14]      ; |Comp|counter:Contador|uni[14]      ; regout           ;
+; |Comp|counter:Contador|uni[5]       ; |Comp|counter:Contador|uni[5]       ; regout           ;
+; |Comp|counter:Contador|uni[7]       ; |Comp|counter:Contador|uni[7]       ; regout           ;
+; |Comp|counter:Contador|uni[6]       ; |Comp|counter:Contador|uni[6]       ; regout           ;
+; |Comp|counter:Contador|Add1~17      ; |Comp|counter:Contador|Add1~17      ; sumout           ;
+; |Comp|counter:Contador|Add1~17      ; |Comp|counter:Contador|Add1~18      ; cout             ;
+; |Comp|counter:Contador|Add1~21      ; |Comp|counter:Contador|Add1~21      ; sumout           ;
+; |Comp|counter:Contador|Add1~21      ; |Comp|counter:Contador|Add1~22      ; cout             ;
+; |Comp|counter:Contador|Add1~25      ; |Comp|counter:Contador|Add1~25      ; sumout           ;
+; |Comp|counter:Contador|Add1~25      ; |Comp|counter:Contador|Add1~26      ; cout             ;
+; |Comp|counter:Contador|Add1~29      ; |Comp|counter:Contador|Add1~29      ; sumout           ;
+; |Comp|counter:Contador|Add1~29      ; |Comp|counter:Contador|Add1~30      ; cout             ;
+; |Comp|counter:Contador|Add1~33      ; |Comp|counter:Contador|Add1~33      ; sumout           ;
+; |Comp|counter:Contador|Add1~33      ; |Comp|counter:Contador|Add1~34      ; cout             ;
+; |Comp|counter:Contador|Add1~37      ; |Comp|counter:Contador|Add1~37      ; sumout           ;
+; |Comp|counter:Contador|Add1~37      ; |Comp|counter:Contador|Add1~38      ; cout             ;
+; |Comp|counter:Contador|Add1~41      ; |Comp|counter:Contador|Add1~41      ; sumout           ;
+; |Comp|counter:Contador|Add1~41      ; |Comp|counter:Contador|Add1~42      ; cout             ;
+; |Comp|counter:Contador|Add1~45      ; |Comp|counter:Contador|Add1~45      ; sumout           ;
+; |Comp|counter:Contador|Add1~45      ; |Comp|counter:Contador|Add1~46      ; cout             ;
+; |Comp|counter:Contador|Add1~49      ; |Comp|counter:Contador|Add1~49      ; sumout           ;
+; |Comp|counter:Contador|Add1~49      ; |Comp|counter:Contador|Add1~50      ; cout             ;
+; |Comp|counter:Contador|Add1~53      ; |Comp|counter:Contador|Add1~53      ; sumout           ;
+; |Comp|counter:Contador|Add1~53      ; |Comp|counter:Contador|Add1~54      ; cout             ;
+; |Comp|counter:Contador|Add1~57      ; |Comp|counter:Contador|Add1~57      ; sumout           ;
+; |Comp|counter:Contador|Add1~57      ; |Comp|counter:Contador|Add1~58      ; cout             ;
+; |Comp|counter:Contador|Add1~61      ; |Comp|counter:Contador|Add1~61      ; sumout           ;
+; |Comp|counter:Contador|Add1~61      ; |Comp|counter:Contador|Add1~62      ; cout             ;
+; |Comp|counter:Contador|Add1~65      ; |Comp|counter:Contador|Add1~65      ; sumout           ;
+; |Comp|counter:Contador|Add1~65      ; |Comp|counter:Contador|Add1~66      ; cout             ;
+; |Comp|counter:Contador|Add1~69      ; |Comp|counter:Contador|Add1~69      ; sumout           ;
+; |Comp|counter:Contador|Add1~69      ; |Comp|counter:Contador|Add1~70      ; cout             ;
+; |Comp|counter:Contador|Add1~73      ; |Comp|counter:Contador|Add1~73      ; sumout           ;
+; |Comp|counter:Contador|Add1~73      ; |Comp|counter:Contador|Add1~74      ; cout             ;
+; |Comp|counter:Contador|Add1~77      ; |Comp|counter:Contador|Add1~77      ; sumout           ;
+; |Comp|counter:Contador|Add1~77      ; |Comp|counter:Contador|Add1~78      ; cout             ;
+; |Comp|counter:Contador|Add1~81      ; |Comp|counter:Contador|Add1~81      ; sumout           ;
+; |Comp|counter:Contador|Add1~81      ; |Comp|counter:Contador|Add1~82      ; cout             ;
+; |Comp|counter:Contador|Add1~85      ; |Comp|counter:Contador|Add1~85      ; sumout           ;
+; |Comp|counter:Contador|Add1~85      ; |Comp|counter:Contador|Add1~86      ; cout             ;
+; |Comp|counter:Contador|Add1~89      ; |Comp|counter:Contador|Add1~89      ; sumout           ;
+; |Comp|counter:Contador|Add1~89      ; |Comp|counter:Contador|Add1~90      ; cout             ;
+; |Comp|counter:Contador|Add1~93      ; |Comp|counter:Contador|Add1~93      ; sumout           ;
+; |Comp|counter:Contador|Add1~93      ; |Comp|counter:Contador|Add1~94      ; cout             ;
+; |Comp|counter:Contador|Add1~97      ; |Comp|counter:Contador|Add1~97      ; sumout           ;
+; |Comp|counter:Contador|Add1~97      ; |Comp|counter:Contador|Add1~98      ; cout             ;
+; |Comp|counter:Contador|Add1~101     ; |Comp|counter:Contador|Add1~101     ; sumout           ;
+; |Comp|counter:Contador|Add1~101     ; |Comp|counter:Contador|Add1~102     ; cout             ;
+; |Comp|counter:Contador|Add1~105     ; |Comp|counter:Contador|Add1~105     ; sumout           ;
+; |Comp|counter:Contador|Add1~105     ; |Comp|counter:Contador|Add1~106     ; cout             ;
+; |Comp|counter:Contador|Add1~109     ; |Comp|counter:Contador|Add1~109     ; sumout           ;
+; |Comp|counter:Contador|Add1~109     ; |Comp|counter:Contador|Add1~110     ; cout             ;
+; |Comp|counter:Contador|Add1~113     ; |Comp|counter:Contador|Add1~113     ; sumout           ;
+; |Comp|counter:Contador|Add1~113     ; |Comp|counter:Contador|Add1~114     ; cout             ;
+; |Comp|counter:Contador|Add1~117     ; |Comp|counter:Contador|Add1~117     ; sumout           ;
+; |Comp|counter:Contador|Add1~117     ; |Comp|counter:Contador|Add1~118     ; cout             ;
+; |Comp|counter:Contador|Add1~121     ; |Comp|counter:Contador|Add1~121     ; sumout           ;
+; |Comp|counter:Contador|Add1~121     ; |Comp|counter:Contador|Add1~122     ; cout             ;
+; |Comp|counter:Contador|Add1~125     ; |Comp|counter:Contador|Add1~125     ; sumout           ;
+; |Comp|counter:Contador|Add2~13      ; |Comp|counter:Contador|Add2~13      ; sumout           ;
+; |Comp|counter:Contador|Add2~13      ; |Comp|counter:Contador|Add2~14      ; cout             ;
+; |Comp|counter:Contador|Add2~17      ; |Comp|counter:Contador|Add2~17      ; sumout           ;
+; |Comp|counter:Contador|Add2~17      ; |Comp|counter:Contador|Add2~18      ; cout             ;
+; |Comp|counter:Contador|Add2~21      ; |Comp|counter:Contador|Add2~21      ; sumout           ;
+; |Comp|counter:Contador|Add2~21      ; |Comp|counter:Contador|Add2~22      ; cout             ;
+; |Comp|counter:Contador|Add2~25      ; |Comp|counter:Contador|Add2~25      ; sumout           ;
+; |Comp|counter:Contador|Add2~25      ; |Comp|counter:Contador|Add2~26      ; cout             ;
+; |Comp|counter:Contador|Add2~29      ; |Comp|counter:Contador|Add2~29      ; sumout           ;
+; |Comp|counter:Contador|Add2~29      ; |Comp|counter:Contador|Add2~30      ; cout             ;
+; |Comp|counter:Contador|Add2~33      ; |Comp|counter:Contador|Add2~33      ; sumout           ;
+; |Comp|counter:Contador|Add2~33      ; |Comp|counter:Contador|Add2~34      ; cout             ;
+; |Comp|counter:Contador|Add2~37      ; |Comp|counter:Contador|Add2~37      ; sumout           ;
+; |Comp|counter:Contador|Add2~37      ; |Comp|counter:Contador|Add2~38      ; cout             ;
+; |Comp|counter:Contador|Add2~41      ; |Comp|counter:Contador|Add2~41      ; sumout           ;
+; |Comp|counter:Contador|Add2~41      ; |Comp|counter:Contador|Add2~42      ; cout             ;
+; |Comp|counter:Contador|Add2~45      ; |Comp|counter:Contador|Add2~45      ; sumout           ;
+; |Comp|counter:Contador|Add2~45      ; |Comp|counter:Contador|Add2~46      ; cout             ;
+; |Comp|counter:Contador|Add2~49      ; |Comp|counter:Contador|Add2~49      ; sumout           ;
+; |Comp|counter:Contador|Add2~49      ; |Comp|counter:Contador|Add2~50      ; cout             ;
+; |Comp|counter:Contador|Add2~53      ; |Comp|counter:Contador|Add2~53      ; sumout           ;
+; |Comp|counter:Contador|Add2~53      ; |Comp|counter:Contador|Add2~54      ; cout             ;
+; |Comp|counter:Contador|Add2~57      ; |Comp|counter:Contador|Add2~57      ; sumout           ;
+; |Comp|counter:Contador|Add2~57      ; |Comp|counter:Contador|Add2~58      ; cout             ;
+; |Comp|counter:Contador|Add2~61      ; |Comp|counter:Contador|Add2~61      ; sumout           ;
+; |Comp|counter:Contador|Add2~61      ; |Comp|counter:Contador|Add2~62      ; cout             ;
+; |Comp|counter:Contador|Add2~65      ; |Comp|counter:Contador|Add2~65      ; sumout           ;
+; |Comp|counter:Contador|Add2~65      ; |Comp|counter:Contador|Add2~66      ; cout             ;
+; |Comp|counter:Contador|Add2~69      ; |Comp|counter:Contador|Add2~69      ; sumout           ;
+; |Comp|counter:Contador|Add2~69      ; |Comp|counter:Contador|Add2~70      ; cout             ;
+; |Comp|counter:Contador|Add2~73      ; |Comp|counter:Contador|Add2~73      ; sumout           ;
+; |Comp|counter:Contador|Add2~73      ; |Comp|counter:Contador|Add2~74      ; cout             ;
+; |Comp|counter:Contador|Add2~77      ; |Comp|counter:Contador|Add2~77      ; sumout           ;
+; |Comp|counter:Contador|Add2~77      ; |Comp|counter:Contador|Add2~78      ; cout             ;
+; |Comp|counter:Contador|Add2~81      ; |Comp|counter:Contador|Add2~81      ; sumout           ;
+; |Comp|counter:Contador|Add2~81      ; |Comp|counter:Contador|Add2~82      ; cout             ;
+; |Comp|counter:Contador|Add2~85      ; |Comp|counter:Contador|Add2~85      ; sumout           ;
+; |Comp|counter:Contador|Add2~85      ; |Comp|counter:Contador|Add2~86      ; cout             ;
+; |Comp|counter:Contador|Add2~89      ; |Comp|counter:Contador|Add2~89      ; sumout           ;
+; |Comp|counter:Contador|Add2~89      ; |Comp|counter:Contador|Add2~90      ; cout             ;
+; |Comp|counter:Contador|Add2~93      ; |Comp|counter:Contador|Add2~93      ; sumout           ;
+; |Comp|counter:Contador|Add2~93      ; |Comp|counter:Contador|Add2~94      ; cout             ;
+; |Comp|counter:Contador|Add2~97      ; |Comp|counter:Contador|Add2~97      ; sumout           ;
+; |Comp|counter:Contador|Add2~97      ; |Comp|counter:Contador|Add2~98      ; cout             ;
+; |Comp|counter:Contador|Add2~101     ; |Comp|counter:Contador|Add2~101     ; sumout           ;
+; |Comp|counter:Contador|Add2~101     ; |Comp|counter:Contador|Add2~102     ; cout             ;
+; |Comp|counter:Contador|Add2~105     ; |Comp|counter:Contador|Add2~105     ; sumout           ;
+; |Comp|counter:Contador|Add2~105     ; |Comp|counter:Contador|Add2~106     ; cout             ;
+; |Comp|counter:Contador|Add2~109     ; |Comp|counter:Contador|Add2~109     ; sumout           ;
+; |Comp|counter:Contador|Add2~109     ; |Comp|counter:Contador|Add2~110     ; cout             ;
+; |Comp|counter:Contador|Add2~113     ; |Comp|counter:Contador|Add2~113     ; sumout           ;
+; |Comp|counter:Contador|Add2~113     ; |Comp|counter:Contador|Add2~114     ; cout             ;
+; |Comp|counter:Contador|Add2~117     ; |Comp|counter:Contador|Add2~117     ; sumout           ;
+; |Comp|counter:Contador|Add2~117     ; |Comp|counter:Contador|Add2~118     ; cout             ;
+; |Comp|counter:Contador|Add2~121     ; |Comp|counter:Contador|Add2~121     ; sumout           ;
+; |Comp|counter:Contador|Add2~121     ; |Comp|counter:Contador|Add2~122     ; cout             ;
+; |Comp|counter:Contador|Add2~125     ; |Comp|counter:Contador|Add2~125     ; sumout           ;
+; |Comp|counter:Contador|cont_clk[31] ; |Comp|counter:Contador|cont_clk[31] ; regout           ;
+; |Comp|counter:Contador|cont_clk[4]  ; |Comp|counter:Contador|cont_clk[4]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[7]  ; |Comp|counter:Contador|cont_clk[7]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[5]  ; |Comp|counter:Contador|cont_clk[5]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[8]  ; |Comp|counter:Contador|cont_clk[8]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[9]  ; |Comp|counter:Contador|cont_clk[9]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[10] ; |Comp|counter:Contador|cont_clk[10] ; regout           ;
+; |Comp|counter:Contador|cont_clk[11] ; |Comp|counter:Contador|cont_clk[11] ; regout           ;
+; |Comp|counter:Contador|cont_clk[13] ; |Comp|counter:Contador|cont_clk[13] ; regout           ;
+; |Comp|counter:Contador|cont_clk[12] ; |Comp|counter:Contador|cont_clk[12] ; regout           ;
+; |Comp|counter:Contador|cont_clk[14] ; |Comp|counter:Contador|cont_clk[14] ; regout           ;
+; |Comp|counter:Contador|cont_clk[15] ; |Comp|counter:Contador|cont_clk[15] ; regout           ;
+; |Comp|counter:Contador|cont_clk[16] ; |Comp|counter:Contador|cont_clk[16] ; regout           ;
+; |Comp|counter:Contador|cont_clk[17] ; |Comp|counter:Contador|cont_clk[17] ; regout           ;
+; |Comp|counter:Contador|cont_clk[29] ; |Comp|counter:Contador|cont_clk[29] ; regout           ;
+; |Comp|counter:Contador|cont_clk[30] ; |Comp|counter:Contador|cont_clk[30] ; regout           ;
+; |Comp|counter:Contador|cont_clk[22] ; |Comp|counter:Contador|cont_clk[22] ; regout           ;
+; |Comp|counter:Contador|cont_clk[21] ; |Comp|counter:Contador|cont_clk[21] ; regout           ;
+; |Comp|counter:Contador|cont_clk[20] ; |Comp|counter:Contador|cont_clk[20] ; regout           ;
+; |Comp|counter:Contador|cont_clk[19] ; |Comp|counter:Contador|cont_clk[19] ; regout           ;
+; |Comp|counter:Contador|cont_clk[26] ; |Comp|counter:Contador|cont_clk[26] ; regout           ;
+; |Comp|counter:Contador|cont_clk[18] ; |Comp|counter:Contador|cont_clk[18] ; regout           ;
+; |Comp|counter:Contador|cont_clk[28] ; |Comp|counter:Contador|cont_clk[28] ; regout           ;
+; |Comp|counter:Contador|cont_clk[6]  ; |Comp|counter:Contador|cont_clk[6]  ; regout           ;
+; |Comp|counter:Contador|cont_clk[27] ; |Comp|counter:Contador|cont_clk[27] ; regout           ;
+; |Comp|counter:Contador|cont_clk[25] ; |Comp|counter:Contador|cont_clk[25] ; regout           ;
+; |Comp|counter:Contador|cont_clk[23] ; |Comp|counter:Contador|cont_clk[23] ; regout           ;
+; |Comp|counter:Contador|cont_clk[24] ; |Comp|counter:Contador|cont_clk[24] ; regout           ;
+; |Comp|counter:Contador|Add0~17      ; |Comp|counter:Contador|Add0~17      ; sumout           ;
+; |Comp|counter:Contador|Add0~17      ; |Comp|counter:Contador|Add0~18      ; cout             ;
+; |Comp|counter:Contador|Add0~21      ; |Comp|counter:Contador|Add0~21      ; sumout           ;
+; |Comp|counter:Contador|Add0~21      ; |Comp|counter:Contador|Add0~22      ; cout             ;
+; |Comp|counter:Contador|Add0~25      ; |Comp|counter:Contador|Add0~25      ; sumout           ;
+; |Comp|counter:Contador|Add0~25      ; |Comp|counter:Contador|Add0~26      ; cout             ;
+; |Comp|counter:Contador|Add0~29      ; |Comp|counter:Contador|Add0~29      ; sumout           ;
+; |Comp|counter:Contador|Add0~29      ; |Comp|counter:Contador|Add0~30      ; cout             ;
+; |Comp|counter:Contador|Add0~33      ; |Comp|counter:Contador|Add0~33      ; sumout           ;
+; |Comp|counter:Contador|Add0~33      ; |Comp|counter:Contador|Add0~34      ; cout             ;
+; |Comp|counter:Contador|Add0~37      ; |Comp|counter:Contador|Add0~37      ; sumout           ;
+; |Comp|counter:Contador|Add0~37      ; |Comp|counter:Contador|Add0~38      ; cout             ;
+; |Comp|counter:Contador|Add0~41      ; |Comp|counter:Contador|Add0~41      ; sumout           ;
+; |Comp|counter:Contador|Add0~41      ; |Comp|counter:Contador|Add0~42      ; cout             ;
+; |Comp|counter:Contador|Add0~45      ; |Comp|counter:Contador|Add0~45      ; sumout           ;
+; |Comp|counter:Contador|Add0~45      ; |Comp|counter:Contador|Add0~46      ; cout             ;
+; |Comp|counter:Contador|Add0~49      ; |Comp|counter:Contador|Add0~49      ; sumout           ;
+; |Comp|counter:Contador|Add0~49      ; |Comp|counter:Contador|Add0~50      ; cout             ;
+; |Comp|counter:Contador|Add0~53      ; |Comp|counter:Contador|Add0~53      ; sumout           ;
+; |Comp|counter:Contador|Add0~53      ; |Comp|counter:Contador|Add0~54      ; cout             ;
+; |Comp|counter:Contador|Add0~57      ; |Comp|counter:Contador|Add0~57      ; sumout           ;
+; |Comp|counter:Contador|Add0~57      ; |Comp|counter:Contador|Add0~58      ; cout             ;
+; |Comp|counter:Contador|Add0~61      ; |Comp|counter:Contador|Add0~61      ; sumout           ;
+; |Comp|counter:Contador|Add0~61      ; |Comp|counter:Contador|Add0~62      ; cout             ;
+; |Comp|counter:Contador|Add0~65      ; |Comp|counter:Contador|Add0~65      ; sumout           ;
+; |Comp|counter:Contador|Add0~65      ; |Comp|counter:Contador|Add0~66      ; cout             ;
+; |Comp|counter:Contador|Add0~69      ; |Comp|counter:Contador|Add0~69      ; sumout           ;
+; |Comp|counter:Contador|Add0~69      ; |Comp|counter:Contador|Add0~70      ; cout             ;
+; |Comp|counter:Contador|Add0~73      ; |Comp|counter:Contador|Add0~73      ; sumout           ;
+; |Comp|counter:Contador|Add0~73      ; |Comp|counter:Contador|Add0~74      ; cout             ;
+; |Comp|counter:Contador|Add0~77      ; |Comp|counter:Contador|Add0~77      ; sumout           ;
+; |Comp|counter:Contador|Add0~77      ; |Comp|counter:Contador|Add0~78      ; cout             ;
+; |Comp|counter:Contador|Add0~81      ; |Comp|counter:Contador|Add0~81      ; sumout           ;
+; |Comp|counter:Contador|Add0~81      ; |Comp|counter:Contador|Add0~82      ; cout             ;
+; |Comp|counter:Contador|Add0~85      ; |Comp|counter:Contador|Add0~85      ; sumout           ;
+; |Comp|counter:Contador|Add0~85      ; |Comp|counter:Contador|Add0~86      ; cout             ;
+; |Comp|counter:Contador|Add0~89      ; |Comp|counter:Contador|Add0~89      ; sumout           ;
+; |Comp|counter:Contador|Add0~89      ; |Comp|counter:Contador|Add0~90      ; cout             ;
+; |Comp|counter:Contador|Add0~93      ; |Comp|counter:Contador|Add0~93      ; sumout           ;
+; |Comp|counter:Contador|Add0~93      ; |Comp|counter:Contador|Add0~94      ; cout             ;
+; |Comp|counter:Contador|Add0~97      ; |Comp|counter:Contador|Add0~97      ; sumout           ;
+; |Comp|counter:Contador|Add0~97      ; |Comp|counter:Contador|Add0~98      ; cout             ;
+; |Comp|counter:Contador|Add0~101     ; |Comp|counter:Contador|Add0~101     ; sumout           ;
+; |Comp|counter:Contador|Add0~101     ; |Comp|counter:Contador|Add0~102     ; cout             ;
+; |Comp|counter:Contador|Add0~105     ; |Comp|counter:Contador|Add0~105     ; sumout           ;
+; |Comp|counter:Contador|Add0~105     ; |Comp|counter:Contador|Add0~106     ; cout             ;
+; |Comp|counter:Contador|Add0~109     ; |Comp|counter:Contador|Add0~109     ; sumout           ;
+; |Comp|counter:Contador|Add0~109     ; |Comp|counter:Contador|Add0~110     ; cout             ;
+; |Comp|counter:Contador|Add0~113     ; |Comp|counter:Contador|Add0~113     ; sumout           ;
+; |Comp|counter:Contador|Add0~113     ; |Comp|counter:Contador|Add0~114     ; cout             ;
+; |Comp|counter:Contador|Add0~117     ; |Comp|counter:Contador|Add0~117     ; sumout           ;
+; |Comp|counter:Contador|Add0~117     ; |Comp|counter:Contador|Add0~118     ; cout             ;
+; |Comp|counter:Contador|Add0~121     ; |Comp|counter:Contador|Add0~121     ; sumout           ;
+; |Comp|counter:Contador|Add0~121     ; |Comp|counter:Contador|Add0~122     ; cout             ;
+; |Comp|counter:Contador|Add0~125     ; |Comp|counter:Contador|Add0~125     ; sumout           ;
+; |Comp|display:D1|Equal0~0           ; |Comp|display:D1|Equal0~0           ; combout          ;
+; |Comp|display:D1|Equal0~1           ; |Comp|display:D1|Equal0~1           ; combout          ;
+; |Comp|display:D1|Equal0~2           ; |Comp|display:D1|Equal0~2           ; combout          ;
+; |Comp|display:D1|Equal0~3           ; |Comp|display:D1|Equal0~3           ; combout          ;
+; |Comp|display:D1|Equal0~4           ; |Comp|display:D1|Equal0~4           ; combout          ;
+; |Comp|display:D1|Equal0~5           ; |Comp|display:D1|Equal0~5           ; combout          ;
+; |Comp|counter:Contador|dez[2]       ; |Comp|counter:Contador|dez[2]       ; regout           ;
+; |Comp|counter:Contador|dez[3]       ; |Comp|counter:Contador|dez[3]       ; regout           ;
+; |Comp|counter:Contador|dez[4]       ; |Comp|counter:Contador|dez[4]       ; regout           ;
+; |Comp|counter:Contador|dez[5]       ; |Comp|counter:Contador|dez[5]       ; regout           ;
+; |Comp|counter:Contador|dez[7]       ; |Comp|counter:Contador|dez[7]       ; regout           ;
+; |Comp|counter:Contador|dez[6]       ; |Comp|counter:Contador|dez[6]       ; regout           ;
+; |Comp|display:D2|Equal0~0           ; |Comp|display:D2|Equal0~0           ; combout          ;
+; |Comp|counter:Contador|dez[8]       ; |Comp|counter:Contador|dez[8]       ; regout           ;
+; |Comp|counter:Contador|dez[9]       ; |Comp|counter:Contador|dez[9]       ; regout           ;
+; |Comp|counter:Contador|dez[10]      ; |Comp|counter:Contador|dez[10]      ; regout           ;
+; |Comp|counter:Contador|dez[11]      ; |Comp|counter:Contador|dez[11]      ; regout           ;
+; |Comp|counter:Contador|dez[13]      ; |Comp|counter:Contador|dez[13]      ; regout           ;
+; |Comp|counter:Contador|dez[12]      ; |Comp|counter:Contador|dez[12]      ; regout           ;
+; |Comp|display:D2|Equal0~1           ; |Comp|display:D2|Equal0~1           ; combout          ;
+; |Comp|counter:Contador|dez[14]      ; |Comp|counter:Contador|dez[14]      ; regout           ;
+; |Comp|counter:Contador|dez[15]      ; |Comp|counter:Contador|dez[15]      ; regout           ;
+; |Comp|counter:Contador|dez[16]      ; |Comp|counter:Contador|dez[16]      ; regout           ;
+; |Comp|counter:Contador|dez[17]      ; |Comp|counter:Contador|dez[17]      ; regout           ;
+; |Comp|counter:Contador|dez[19]      ; |Comp|counter:Contador|dez[19]      ; regout           ;
+; |Comp|counter:Contador|dez[18]      ; |Comp|counter:Contador|dez[18]      ; regout           ;
+; |Comp|display:D2|Equal0~2           ; |Comp|display:D2|Equal0~2           ; combout          ;
+; |Comp|counter:Contador|dez[26]      ; |Comp|counter:Contador|dez[26]      ; regout           ;
+; |Comp|counter:Contador|dez[27]      ; |Comp|counter:Contador|dez[27]      ; regout           ;
+; |Comp|counter:Contador|dez[28]      ; |Comp|counter:Contador|dez[28]      ; regout           ;
+; |Comp|counter:Contador|dez[29]      ; |Comp|counter:Contador|dez[29]      ; regout           ;
+; |Comp|counter:Contador|dez[31]      ; |Comp|counter:Contador|dez[31]      ; regout           ;
+; |Comp|counter:Contador|dez[30]      ; |Comp|counter:Contador|dez[30]      ; regout           ;
+; |Comp|display:D2|Equal0~3           ; |Comp|display:D2|Equal0~3           ; combout          ;
+; |Comp|counter:Contador|dez[20]      ; |Comp|counter:Contador|dez[20]      ; regout           ;
+; |Comp|counter:Contador|dez[21]      ; |Comp|counter:Contador|dez[21]      ; regout           ;
+; |Comp|counter:Contador|dez[22]      ; |Comp|counter:Contador|dez[22]      ; regout           ;
+; |Comp|counter:Contador|dez[23]      ; |Comp|counter:Contador|dez[23]      ; regout           ;
+; |Comp|counter:Contador|dez[25]      ; |Comp|counter:Contador|dez[25]      ; regout           ;
+; |Comp|counter:Contador|dez[24]      ; |Comp|counter:Contador|dez[24]      ; regout           ;
+; |Comp|display:D2|Equal0~4           ; |Comp|display:D2|Equal0~4           ; combout          ;
+; |Comp|display:D2|Equal0~5           ; |Comp|display:D2|Equal0~5           ; combout          ;
+; |Comp|display:D2|comb~1             ; |Comp|display:D2|comb~1             ; combout          ;
+; |Comp|counter:Contador|Equal0~0     ; |Comp|counter:Contador|Equal0~0     ; combout          ;
+; |Comp|counter:Contador|Equal0~1     ; |Comp|counter:Contador|Equal0~1     ; combout          ;
+; |Comp|counter:Contador|Equal0~2     ; |Comp|counter:Contador|Equal0~2     ; combout          ;
+; |Comp|counter:Contador|Equal1~0     ; |Comp|counter:Contador|Equal1~0     ; combout          ;
+; |Comp|counter:Contador|Equal1~1     ; |Comp|counter:Contador|Equal1~1     ; combout          ;
+; |Comp|counter:Contador|Equal1~2     ; |Comp|counter:Contador|Equal1~2     ; combout          ;
+; |Comp|counter:Contador|LessThan0~1  ; |Comp|counter:Contador|LessThan0~1  ; combout          ;
+; |Comp|counter:Contador|LessThan0~2  ; |Comp|counter:Contador|LessThan0~2  ; combout          ;
+; |Comp|counter:Contador|LessThan0~3  ; |Comp|counter:Contador|LessThan0~3  ; combout          ;
+; |Comp|counter:Contador|LessThan0~4  ; |Comp|counter:Contador|LessThan0~4  ; combout          ;
+; |Comp|counter:Contador|LessThan0~5  ; |Comp|counter:Contador|LessThan0~5  ; combout          ;
+; |Comp|rst                           ; |Comp|rst~corein                    ; combout          ;
+; |Comp|rst~clkctrl                   ; |Comp|rst~clkctrl                   ; outclk           ;
++-------------------------------------+-------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Dec 30 18:40:10 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Comp -c Comp
+Info: Using vector source file "D:/altera/Projetos/Quartus II/Etapa 3/Contador com componente/Comp.vwf"
+Warning: Can't find signal in vector source file for input pin "|Comp|rst"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      23.08 %
+Info: Number of transitions in simulation is 8489
+Info: Quartus II Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Thu Dec 30 18:40:10 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+
